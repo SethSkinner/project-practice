@@ -16,7 +16,7 @@ class Deck{
       for (let suit in suits) {
         for (let value in values) {
             for(let image in images) {
-               this.deck.push(`${values[value]} of ${suits[suit]} of${images[image]}`);
+               this.deck.push(`${values[value]} of ${suits[suit]} of ${images[image]}`);
           }  
         }
       }
@@ -29,7 +29,7 @@ class Deck{
       while(m){
         i = Math.floor(Math.random() * m--);
   
-        [deck[m], deck[i]], = [deck[i], deck[m]];
+        [deck[m], deck[i]] = [deck[i], deck[m]];
       }
   
       return this;
